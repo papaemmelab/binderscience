@@ -4,8 +4,9 @@ JupyterLab: [![binder badge][binder_badge]][binder_lab]
 
 RStudio: [![binder badge][binder_badge]][binder_studio]
 
-Reproducible science integrated with mybinder.
-Click launch binder above to explore this project and run the code.
+Reproducible science integrated with mybinder, created by https://github.com/leukgen/cookiecutter-reproducible-science.
+
+Integrated with binder: Click launch binder above to explore this project and run the code.
 
 Project Organization
 --------------------
@@ -15,6 +16,12 @@ Project Organization
     ├── LICENSE
     ├── README.md
     ├── bin
+    ├── binder
+    │   ├── apt.txt
+    │   ├── install.R
+    │   ├── postBuild
+    │   ├── requirements.txt
+    │   └── runtime.txt
     ├── config
     ├── data
     │   ├── external
@@ -25,18 +32,12 @@ Project Organization
     ├── notebooks
     ├── reports
     │   └── figures
-    ├── src
-    │   ├── data
-    │   ├── external
-    │   ├── models
-    │   ├── tools
-    │   └── visualization
-    └── binder
-        ├── requirements.txt <- Python requirements
-        ├── postBuild <- Additional setup such as adding jupyterlab extensions
-        ├── runtime.txt <- Specifiy R version or change to python2 with `python-2.7`
-        └── install.R <- R requirements
-
+    └── src
+        ├── data
+        ├── external
+        ├── models
+        ├── tools
+        └── visualization
 
 <!-- Badges -->
 [binder_badge]: https://mybinder.org/badge.svg
